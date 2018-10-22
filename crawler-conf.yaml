@@ -44,6 +44,9 @@ config:
   # The fetched page will be trimmed to 65KB in this case
   # Set -1 to disable the limit.
   http.content.limit: 65536
+  
+  http.protocol.implementation: "com.digitalpebble.stormcrawler.protocol.okhttp.HttpProtocol"
+  https.protocol.implementation: "com.digitalpebble.stormcrawler.protocol.okhttp.HttpProtocol"
 
   # FetcherBolt queue dump => comment out to activate
   # if a file exists on the worker machine with the corresponding port number
